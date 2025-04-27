@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 
 # توکن رباتت
-TOKEN = 'توکن_ربات_اینجا'
+TOKEN = ''
 
 bot = telebot.TeleBot(TOKEN)
 
