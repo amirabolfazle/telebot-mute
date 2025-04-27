@@ -6,7 +6,7 @@ TOKEN = ''
 
 bot = telebot.TeleBot(TOKEN)
 
-# دستور /mute
+# /mute
 @bot.message_handler(commands=['mute'])
 def mute_user(message):
     if not message.reply_to_message:
@@ -32,7 +32,7 @@ def mute_user(message):
     except Exception as e:
         bot.reply_to(message, f"خطا در میوت کردن: {e}")
 
-# دستور /unmute
+# /unmute
 @bot.message_handler(commands=['unmute'])
 def unmute_user(message):
     if not message.reply_to_message:
